@@ -1,6 +1,6 @@
-# Crunchy Postgres chart
+# Crunchy Postgis chart
 
-A chart to provision a [Crunchy Postgres](https://www.crunchydata.com/) cluster.
+A chart to provision a [Crunchy Postgis](https://www.crunchydata.com/) cluster.
 
 ## Configuration
 
@@ -8,8 +8,8 @@ A chart to provision a [Crunchy Postgres](https://www.crunchydata.com/) cluster.
 
 | Parameter          | Description            | Default            |
 | ------------------ | ---------------------- | ------------------ |
-| `fullnameOverride` | Override release name  | `crunchy-postgres` |
-| `crunchyImage`     | Crunchy Postgres image |                    |
+| `fullnameOverride` | Override release name  | `crunchy-postgis` |
+| `crunchyImage`     | Crunchy Postgis image |                    |
 | `postgresVersion`  | Postgres version       | `14`               |
 
 ---

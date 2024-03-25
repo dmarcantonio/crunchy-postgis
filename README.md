@@ -1,29 +1,29 @@
-# Crunchy Postgres helm chart
+# Crunchy Postgis helm chart
 
-A tested helm chart for Crunchy Postgres
+A tested helm chart for Crunchy Postgis
 
 ## Charts
 
-### Crunchy Postgres chart
+### Crunchy Postgis chart
 
-A chart to deploy a high availability Crunchy Postgres cluster
+A chart to deploy a high availability Crunchy Postgis cluster
 
 #### Add chart to dependencies in your chart.yaml:
 
 ```
 dependencies:
-  - name: crunchy-postgres
+  - name: crunchy-postgis
     version: 0.5.0
-    repository: https://bcgov.github.io/crunchy-postgres/
+    repository: https://dmarcantonio.github.io/crunchy-postgis/
 ```
 
 #### Values are located in the documentation here:
 
-[Crunchy Postgres Documentation](charts/crunchy-postgres/README.md)
+[Crunchy Postgis Documentation](charts/crunchy-postgis/README.md)
 
-### Crunchy Postgres tools chart
+### Crunchy Postgis tools chart
 
-A set of standard service accounts and networking templates that were needed to deploy a Crunchy Postgres cluster but are kept separate from the main Crunchy Postgres chart.
+A set of standard service accounts and networking templates that were needed to deploy a Crunchy Postgis cluster but are kept separate from the main Crunchy Postgis chart.
 
 #### Add chart to dependencies in your chart.yaml:
 
@@ -31,7 +31,7 @@ A set of standard service accounts and networking templates that were needed to 
 dependencies:
   - name: crunchy-postgres-tools
     version: 0.3.0
-    repository: https://bcgov.github.io/crunchy-postgres/
+    repository: https://dmarcantonio.github.io/crunchy-postgis/
 ```
 
 #### Values are located in the documentation here:
@@ -52,11 +52,11 @@ git push --tags
 
 ## Raw YAML files
 
-An archive of the latest releases raw YAML files can be found in the [releases](https://github.com/bcgov/crunchy-postgres/releases) section. These are bundled together unlike the Helm charts which are released separately.
+An archive of the latest releases raw YAML files can be found in the [releases](https://github.com/dmarcantonio/crunchy-postgis/releases) section. These are bundled together unlike the Helm charts which are released separately.
 
 Alternatively you can save them with the [helm template](https://helm.sh/docs/helm/helm_template/) command:
 
-`helm template --output-dir yaml charts/crunchy-postgres`
+`helm template --output-dir yaml charts/crunchy-postgis`
 
 `helm template --output-dir yaml charts/tools`
 
