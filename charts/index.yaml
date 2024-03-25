@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  crunchy-postgis:
+  - apiVersion: v2
+    appVersion: 5.0.4-0.1
+    created: "2024-03-25T09:56:57.0416152-07:00"
+    description: A Helm chart for Kubernetes
+    digest: 89c585d09d6d615a5475ba91826720307df4a659188278664496bd467658650f
+    name: crunchy-postgis
+    type: application
+    urls:
+    - crunchy-postgis-0.6.1.tgz
+    version: 0.6.1
+generated: "2024-03-25T09:56:57.0396151-07:00"
