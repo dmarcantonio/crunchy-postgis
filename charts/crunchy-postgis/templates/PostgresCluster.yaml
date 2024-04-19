@@ -82,6 +82,7 @@ spec:
       databases:
         - {{ template "crunchy-postgres.fullname" . }}
   
+  {{ if .Values.pgBackRest.enabled }}
   backups:
     pgbackrest:
       {{ if .Values.pgBackRest.image }}
@@ -153,6 +154,7 @@ spec:
             limits:
               cpu: {{ .Values.pgBackRest.sidecars.limits.cpu }}
               memory: {{ .Values.pgBackRest.sidecars.limits.memory }}
+  {{- end }}
   
   patroni:
     dynamicConfiguration:
